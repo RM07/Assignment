@@ -30,7 +30,7 @@ book_info = soup.find_all('li',class_= 'col-xs-6 col-sm-4 col-md-3 col-lg-3')
 #     print(array3[i])
 
 #     print("-----------------------------------------------------------------")
-fields = ['title','price','no_of_start']
+fields = ['title','price','no_of_star']
 DataArray = []
 for book in book_info:
     arr = []
