@@ -11,7 +11,7 @@ class QuoteSpider(scrapy.Spider):
         token = response.css('form input::attr(value)').extract_first()
         return FormRequest.from_response(response,formdata={
             'csrf_token':token,
-            'username':'rohanmeena07@gmail.com',
+            'username':'rohanmeena07@ gmail.com',
             'password':'rohanmeena07@'
         },callback= self.start_scraping)
 
